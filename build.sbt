@@ -7,8 +7,11 @@ lazy val root = (project in file(".")).
       organization := "io.samritchie",
       scalaVersion := "2.12.7"
     )),
-    name := "interview"
+    name := "connectFour"
   )
+
+mainClass := Some("io.samritchie.interview.Connect4")
+
 
 libraryDependencies ++= Seq(
   "org.scalatest" %% "scalatest" % scalaTestVersion % Test,
